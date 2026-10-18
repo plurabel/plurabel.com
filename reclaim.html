@@ -17,6 +17,8 @@
     code { font-size: 0.9em; }
     .soon { display: inline-block; margin-top: 0.8rem; font-size: 0.8rem; color: #2e5d50; }
     .buy { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; font-weight: 600; color: #2e5d50; }
+    .shot { display: block; max-width: 100%; border: 1px solid #c9bbab; border-radius: 6px; margin-top: 1.2rem; }
+    .shotcap { font-size: 0.8rem; color: rgba(28,25,22,.62); margin: 0.35rem 0 1.2rem; }
     .nav { margin-top: 2.2rem; padding-top: 1rem; border-top: 1px solid #c9bbab; font-size: 0.85rem; color: rgba(28,25,22,.62); }
   </style>
 </head>
@@ -24,24 +26,28 @@
   <main>
     <div class="imprint">Plurabel</div>
     <h1>Reclaim</h1>
-    <p class="tag">Send these to the group chat, the school, the reporter — without leaking where you live. Safe-to-share copies; your originals stay untouched.</p>
+    <p class="tag">Send these to the group chat, the school, the reporter — without leaking where you live. Clean copies; your originals stay untouched.</p>
 
     <h2>What it does</h2>
     <ul>
-      <li>Drop photos, screenshots, or a whole folder; cleaned copies land in <code>reclaimed/</code>.</li>
-      <li>Strips GPS location, camera serial numbers, and owner/creator names by default.</li>
-      <li>JPEG, PNG, HEIC/HEIF, TIFF, WebP, MOV/MP4/M4V. Anything else is listed in <code>failed.txt</code>, not mangled.</li>
-      <li>Never overwrites. The file you drop is the file you keep.</li>
+      <li>Pick photos or videos from your library or Files; clean copies go back to Photos or onward through the share sheet.</li>
+      <li>“Reclaim — strip metadata” sits on the system share sheet, so the fix happens before you send.</li>
+      <li>Strips GPS location, camera serials, and owner/creator names. Orientation survives; pixels are untouched or re-encoded once, depending on format.</li>
+      <li>JPEG, PNG, HEIC/HEIF, TIFF, WebP, MOV/MP4/M4V. Anything else is listed as skipped, never mangled — a corrupt file fails loudly, an animated GIF is refused rather than flattened to one still.</li>
+      <li>Never overwrites. The file you pick is the file you keep.</li>
     </ul>
 
     <h2>What it won’t do</h2>
     <ul>
-      <li>Upload your photos anywhere — the cleaning runs locally.</li>
+      <li>Upload your photos anywhere — stripping runs on the phone, no network at all.</li>
       <li>Edit pixels: it removes hidden data, not faces.</li>
+      <li>Keep a Live Photo whole — the still+clip pairing lives in the metadata and goes with it. You get the honest still, not a broken pair.</li>
       <li>Charge you again.</li>
     </ul>
 
-    <span class="soon">Direct download, coming</span>
+    <img class="shot" src="shots/reclaim.png" alt="Plurabel Reclaim — empty drop window">
+    <p class="shotcap">Pick, strip, save — three taps on the phone.</p>
+    <span class="soon">Coming to the App Store</span>
     <p class="nav"><a href="index.html">Plurabel</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></p>
   </main>
 </body>

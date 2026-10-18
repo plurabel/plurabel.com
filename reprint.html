@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plurabel Reprint</title>
-  <meta name="description" content="iPhone photos that open on any PC. HEIC to JPEG, once, on this Mac.">
+  <meta name="description" content="The image nobody can open becomes the JPEG anybody can. Converted on the phone, once.">
   <style>
     body { background: #f4eee6; color: #1c1916; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; }
     main { max-width: 40rem; margin: 0 auto; padding: 2.4rem 1.75rem 3rem; }
@@ -17,6 +17,8 @@
     code { font-size: 0.9em; }
     .soon { display: inline-block; margin-top: 0.8rem; font-size: 0.8rem; color: #2e5d50; }
     .buy { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; font-weight: 600; color: #2e5d50; }
+    .shot { display: block; max-width: 100%; border: 1px solid #c9bbab; border-radius: 6px; margin-top: 1.2rem; }
+    .shotcap { font-size: 0.8rem; color: rgba(28,25,22,.62); margin: 0.35rem 0 1.2rem; }
     .nav { margin-top: 2.2rem; padding-top: 1rem; border-top: 1px solid #c9bbab; font-size: 0.85rem; color: rgba(28,25,22,.62); }
   </style>
 </head>
@@ -24,24 +26,28 @@
   <main>
     <div class="imprint">Plurabel</div>
     <h1>Reprint</h1>
-    <p class="tag">iPhone photos that open on Dad’s PC, the office printer, the school portal. HEIC becomes ordinary JPEG.</p>
+    <p class="tag">The image nobody can open becomes the JPEG anybody can. Weird formats — webp, psd, camera RAW — convert on the phone.</p>
 
     <h2>What it does</h2>
     <ul>
-      <li>Drop HEIC/HEIF photos or a folder; JPEG copies land in <code>jpeg/</code>.</li>
-      <li>Conversion runs through macOS’s own imaging — no uploads, no cloud queue.</li>
-      <li>Live Photo video parts stay behind on purpose: the still is what converts.</li>
-      <li>Anything it can’t convert is a line in <code>failed.txt</code>.</li>
+      <li>A .webp from a download, a .psd a designer sent, a .dng out of a camera — pick them from Photos or Files, get JPEG (or PNG/HEIF) copies.</li>
+      <li>“Convert with Reprint” sits on the system share sheet, right where the unopenable file arrives.</li>
+      <li>Conversion runs through the phone’s own imaging — no uploads, no queue.</li>
+      <li>Strips happen per file: anything it can’t convert is listed with a reason, not a crash.</li>
     </ul>
 
     <h2>What it won’t do</h2>
     <ul>
       <li>Overwrite or move your originals.</li>
       <li>Convert video files.</li>
+      <li>Be a photo editor — it changes the container, not the picture.</li>
       <li>Charge you again.</li>
     </ul>
 
-    <span class="soon">Direct download, coming</span>
+    <img class="shot" src="shots/reprint.png" alt="Plurabel Reprint — converted batch">
+    <img class="shot" src="shots/reprint-mid.png" alt="Plurabel Reprint — share sheet extension">
+    <p class="shotcap">The unopenable file, converted where it landed.</p>
+    <span class="soon">Coming to the App Store</span>
     <p class="nav"><a href="index.html">Plurabel</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></p>
   </main>
 </body>

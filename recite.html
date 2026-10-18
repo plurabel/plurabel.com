@@ -17,6 +17,8 @@
     code { font-size: 0.9em; }
     .soon { display: inline-block; margin-top: 0.8rem; font-size: 0.8rem; color: #2e5d50; }
     .buy { display: inline-block; margin-top: 0.8rem; font-size: 0.85rem; font-weight: 600; color: #2e5d50; }
+    .shot { display: block; max-width: 100%; border: 1px solid #c9bbab; border-radius: 6px; margin-top: 1.2rem; }
+    .shotcap { font-size: 0.8rem; color: rgba(28,25,22,.62); margin: 0.35rem 0 1.2rem; }
     .nav { margin-top: 2.2rem; padding-top: 1rem; border-top: 1px solid #c9bbab; font-size: 0.85rem; color: rgba(28,25,22,.62); }
   </style>
 </head>
@@ -24,23 +26,27 @@
   <main>
     <div class="imprint">Plurabel</div>
     <h1>Recite</h1>
-    <p class="tag">An EPUB you own becomes a local audiobook — chapter WAV files and a single m4b — read by a voice already on your Mac.</p>
+    <p class="tag">An EPUB you own becomes an audiobook — an m4b with chapters — read by a voice already on your phone.</p>
 
     <h2>What it does</h2>
     <ul>
-      <li>Drop an EPUB you own; get chapter audio plus an m4b audiobook.</li>
-      <li>Uses macOS’s built-in speech voices — the ones in System Settings. Pick another installed voice and Recite uses it.</li>
-      <li>Everything is synthesized on this machine; nothing is sent away.</li>
+      <li>Open an EPUB you own — from Files or the share sheet — and get an m4b audiobook with chapters.</li>
+      <li>Pick any voice installed on the phone; the ones in Settings → Accessibility → Spoken Content just work.</li>
+      <li>Everything is synthesized on the device; the finished book sits in the app’s folder, visible in Files.</li>
     </ul>
 
     <h2>What it won’t do</h2>
     <ul>
-      <li>Read DRM-locked ebooks — a locked file is a line in <code>failed.txt</code>, not a workaround.</li>
+      <li>Read DRM-locked ebooks — a locked book is reported, not cracked.</li>
       <li>Record your own voice or clone one.</li>
+      <li>Send the text anywhere — no network.</li>
       <li>Charge you again.</li>
     </ul>
 
-    <span class="soon">Direct download, coming</span>
+    <img class="shot" src="shots/recite.png" alt="Plurabel Recite — bookshelf">
+    <img class="shot" src="shots/recite-mid.png" alt="Plurabel Recite — chapters rendered">
+    <p class="shotcap">Pick a book, pick a voice, get an audiobook.</p>
+    <span class="soon">Coming to the App Store</span>
     <p class="nav"><a href="index.html">Plurabel</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy</a></p>
   </main>
 </body>
