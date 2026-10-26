@@ -7,13 +7,12 @@ The built website for [Plurabel](https://github.com/plurabel/plurabel), a small 
 The site is written in the `docs/site/` folder of the [plurabel/plurabel](https://github.com/plurabel/plurabel) repository. To rebuild and republish it, from a checkout of that repository with this one cloned beside it as `../plurabel.com`:
 
 ```text
-make site
-cp -R docs/site/dist/. ../plurabel.com/
-cd ../plurabel.com
-git add -A
-git commit -m "site: rebuild"
-git push
+make site-deploy
 ```
+
+renders, syncs `docs/site/dist/` into this checkout (keeping `.git`, `CNAME`,
+this README), commits, and pushes. `make check-site` gates the render first
+if you want it.
 
 Expected: `make site` writes the built pages to `docs/site/dist`; after the push, GitHub Pages republishes the site. DNS and host notes are in `docs/deploy-runbook.md` in the source repository.
 
